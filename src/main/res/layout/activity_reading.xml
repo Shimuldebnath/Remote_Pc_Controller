@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#76ff03"
+        tools:context="com.example.pcremote.Reading">
+
+
+        <TextView
+            android:text="How to use:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#1A237E"/>
+        <TextView
+            android:text="To use this app server program is needed.Download it from www.ondrive.com. run the JAR file. That will create a wifi hotspot .Set the IP adress to '192.168.221.1' of the hotspot. Turn on the wifi of your phone. Connect with remotedroid with password 123456789. Then press the connect logo. This will connect the phone with the computer."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:text="ENJOY!!!!!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#1A237E"/>
+
+    </LinearLayout>
+</ScrollView>

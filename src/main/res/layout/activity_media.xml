@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mediaback"
+    android:orientation="vertical"
+    tools:context="com.example.shimul.androidcontrol.Media"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="150dp">
+
+        <ImageButton
+            android:id="@+id/up"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/up"
+            android:layout_marginLeft="130dp"
+            android:onClick="onclick"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:background="@drawable/back"
+            android:onClick="onclick"
+            />
+
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onclick"
+            android:background="@drawable/pause"
+
+            />
+
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forward"
+            android:onClick="onclick"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/down"
+            android:onClick="onclick"
+            android:layout_marginLeft="130dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

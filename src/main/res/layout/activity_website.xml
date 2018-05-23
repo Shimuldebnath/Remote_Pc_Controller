@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mediaback"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:theme="@style/AppTheme1"
+    tools:context="com.example.shimul.androidcontrol.Website">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_weight="2.24" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="0dp">
+
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/facebook"
+            android:onClick="oncli" />
+
+        <ImageButton
+            android:id="@+id/tw"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/twitter"
+            android:onClick="oncli" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/daily"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/dailymotion"
+            android:onClick="oncli" />
+
+        <ImageButton
+            android:id="@+id/you"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/youtube"
+            android:onClick="oncli" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <ImageButton
+            android:id="@+id/go"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/goal"
+            android:onClick="oncli" />
+
+        <ImageButton
+            android:id="@+id/cric"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/crickinfo"
+            android:onClick="oncli" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <ImageButton
+            android:id="@+id/googl"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/google"
+            android:onClick="oncli" />
+
+        <ImageButton
+            android:id="@+id/instr"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/instagram"
+            android:onClick="oncli" />
+
+    </LinearLayout>
+
+</LinearLayout>

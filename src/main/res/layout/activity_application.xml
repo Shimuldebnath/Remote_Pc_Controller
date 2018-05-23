@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mediaback"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:theme="@style/AppTheme1"
+    tools:context="com.example.shimul.androidcontrol.Application">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_weight="2.24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="0dp">
+
+        <ImageButton
+            android:id="@+id/km"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/kmp"
+            android:layout_marginLeft="0dp"
+            android:onClick="onclick"/>
+
+
+        <ImageButton
+            android:id="@+id/cmd"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cmd"
+            android:onClick="onclick"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/control"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/controlpanel"
+            android:onClick="onclick"/>
+
+        <ImageButton
+            android:id="@+id/chrome"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/chrome"
+            android:onClick="onclick"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <ImageButton
+            android:id="@+id/calculator"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/calc"
+            android:onClick="onclick"
+            android:layout_marginLeft="0dp"/>
+
+        <ImageButton
+            android:id="@+id/note"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/notepad"
+            android:onClick="onclick"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

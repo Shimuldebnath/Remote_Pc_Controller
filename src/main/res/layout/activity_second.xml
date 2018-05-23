@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second2"
+    android:orientation="vertical"
+    tools:context="com.example.shimul.androidcontrol.SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+    <Button
+
+        android:text="Keyboard"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keyboard"
+        android:onClick="key" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    <Button
+        android:text="Media"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/media"
+        android:layout_marginTop="20dp"
+        android:onClick="med" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    <Button
+        android:text="Presentation"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presentation"
+        android:layout_marginTop="20dp"
+        android:onClick="pre" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    <Button
+        android:text="Touchpad"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="tou"
+        android:layout_marginTop="20dp"
+        android:id="@+id/touchpad" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:text="power"
+            android:background="#772c1f"
+            android:textColor="#ffffff"
+            android:alpha="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/power"
+            android:onClick="pow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    <Button
+        android:text="Application"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/application"
+        android:onClick="appli" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <Button
+        android:text="Voice Recognition"
+        android:background="#772c1f"
+        android:textColor="#ffffff"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/VoiceRecognition"
+        android:layout_marginTop="20dp"
+        android:onClick="voicer"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:text="Website"
+            android:background="#772c1f"
+            android:textColor="#ffffff"
+            android:alpha="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Web"
+            android:layout_marginTop="20dp"
+            android:onClick="websi"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

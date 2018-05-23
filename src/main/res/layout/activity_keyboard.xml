@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:orientation="vertical"
+    tools:context="com.example.shimul.androidcontrol.Keyboard">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_weight="2.24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/obakteButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="!"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/AttherateButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\@"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/HashButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="#"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/DollarButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/PercentageButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="%"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/onButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="^"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/AstericsButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/LeftbracketButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/RightbracketButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/MinusButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/PlusButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/EqualButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/one"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/two"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/four"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/six"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/seven"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/eight"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/nine"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/zero"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/QButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Q"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/WButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/EButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/RButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/TButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/YButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Y"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/UButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="U"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/IButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/OButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/PButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="P"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/AButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/SButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/DButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/FButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/GButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="G"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/HButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="H"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/JButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="J"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/KButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="K"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/LButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="L"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/ZButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Z"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/XButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/CButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/VButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/BButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/NButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="N"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/MButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="M"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/BacksapceButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BackSpace"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/tabButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tab"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/enterButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ENTR"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/CapsLockButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Caps Lock" />
+
+        <Button
+            android:id="@+id/shiftButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Shift" />
+
+        <Button
+            android:id="@+id/CtrlButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Ctrl" />
+
+        <Button
+            android:id="@+id/AltButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alt"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/SpaceButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Space"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/escButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Esc"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/LeftButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lft"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/RightButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Rgt" />
+
+        <Button
+            android:id="@+id/UpButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Up" />
+
+        <Button
+            android:id="@+id/DownButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Down" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/duifotaButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/SemicolonnButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=";"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/comaButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=","
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/QuestionButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ques"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/SlashButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/CntrZButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cntr+Z"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/DeleteButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/ShiftDeleteButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Shift+Delete"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/CtrlSButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ctrl+S"
+            android:onClick="ext"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/CtrlsButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Ctrl+A" />
+
+        <Button
+            android:id="@+id/CtrlXButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Ctrl+X" />
+
+        <Button
+            android:id="@+id/CtrlCButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Ctrl+C" />
+        <Button
+            android:id="@+id/ctrlVButton"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Ctrl+V" />
+
+        <Button
+            android:id="@+id/altf4"
+            android:textAllCaps="false"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ext"
+            android:text="Alt+F4" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
